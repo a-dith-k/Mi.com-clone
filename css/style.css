@@ -16,6 +16,9 @@ nav{
     height:60px;
     display: flex;
     background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 
 }
 
@@ -156,7 +159,6 @@ nav{
     width:100%;
     height:550px;
     display: flex;
-    border: 2px solid green;
     justify-content: space-evenly;
 
 }
@@ -164,33 +166,62 @@ nav{
 .image1{
     height:100%;
     width:48%;
-    border: 2px solid red;
-    overflow: hidden;
+    background: url("../images/sec-3-img-1.webp");
+    background-size: 700px 500px;
+    text-align: center;
+
+
+}
+
+.img-para
+{
+    color: white;
+    font-size:18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+.sec-3-image-text{
+     margin-top: 40px;
+    color:white;
+    font-size: 36px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 .image2{
     height:100%;
     width:24%;
-    border: 2px solid red;
-    overflow: hidden;
-
+    background: url("../images/sec-3-img-2.webp");
+    background-size: 361px 544px;
+    text-align: center;
 
 }
+
+.image2 h1{
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+
 .image3{
     height:100%;
     width:24%;
-    border: 2px solid red;
     overflow: hidden;
 }
-.sec-3-img1{
-    width:725px;
-    height:544px;
-}
 
-.sec-3-img2{
-    width:361px;
-    height:544px;
-}
+
+
 
 .sec-3-img3{
     width: 317px;
@@ -198,7 +229,7 @@ nav{
 }
 
 .sec-3-div-3-sec-1{
-    border: 2px solid red;
+
     width: 100%;
     height:200px;
     padding-top: 40px;
@@ -212,7 +243,6 @@ nav{
     font-family: 'Roboto', sans-serif;
 }
 .sec-3-div-3-sec-2{
-    border:2px solid rebeccapurple;
     padding:20px;
 
 }
@@ -224,7 +254,6 @@ nav{
 .section-4-1{
     width:50%;
     height:100%;
-    border:2px solid rebeccapurple;
     padding: 10px;
     background: white;
 
@@ -233,7 +262,6 @@ nav{
 .section-4-2{
     width:50%;
     height:100%;
-    border:2px solid rebeccapurple;
     text-align:center;
     background: white;
 
@@ -275,7 +303,6 @@ nav{
 .section-4-5{
     width:100%;
     height:650px;
-    border:2px solid blue;
     padding:60px;
 }
 
@@ -288,14 +315,52 @@ nav{
 .sec-5-sec-1{
     height:100%;
     width:49%;
-    border: 2px solid royalblue;
     background: white;
+    text-align: center;
+    padding-top: 40px;
 
 }
+
+.sec-5-sec-1-div-1{
+
+    width:100%;
+}
+
+.sec-5-sec-1-div-2{
+
+    width:100%;
+    height:70%;
+    display: flex;
+    flex: 1;
+}
+
+.inner-logo{
+    height:100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding-top:50px;
+   flex-direction:column;
+}
+
+.inner-logo img{
+    height:80px;
+    width:80px;
+}
+
+.inner-link p{
+    font-size:17px;
+    font-weight: bold;
+}
+
+.inner-link p:hover{
+    text-decoration:underline;
+}
+
+
 .sec-5-sec-2{
     height:100%;
     width:49%;
-    border: 2px solid royalblue;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -303,7 +368,6 @@ nav{
 }
 
 .section-5 .row-1{
-    border: 2px solid royalblue;
     width:100%;
     height:48.5%;
     text-align: center;
@@ -313,23 +377,28 @@ nav{
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
     margin-top:40px;
+    font-weight:300;
+    margin-bottom: 25px;
 }
 .para{
-    font-size: 17px;
-    font-weight: bold;
+
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.para:hover{
+    text-decoration: underline;
 }
 
 .section-5 .row-2{
     width:100%;
     height:48.5%;
-    border: 2px solid royalblue;
     text-align: center;
 }
 
 footer{
     width:100%;
     height:710px;
-    border:2px solid rgba(255, 106, 0, 0);
     display: flex;
     flex-direction: column;
     background: rgb(25,25,25);
@@ -340,13 +409,11 @@ footer{
 footer .row-1{
     width:100%;
     height: 600px;
-    border:2px solid rgba(236, 6, 233, 0);
     display: flex;
 }
 footer .row-2{
     width:100%;
     height:110px;
-    border:2px solid rgb(255, 0, 166);
 
 }
 
@@ -360,7 +427,6 @@ footer .row-2 p{
 .col-1{
     height:100%;
     width:70%;
-    border:2px solid rgba(0, 128, 128, 0);
     display: flex;
     flex: 1;
 
@@ -369,14 +435,48 @@ footer .row-2 p{
 .col-2{
     height:100%;
     width:30%;
-    border:2px solid #0cd534;
+    border: 2px solid yellow;
+    padding-top: 40px;
+
+}
+
+.col-2 p{
+    margin-top:10px;
+    color: white;
+    font-size:17px;
+    font-weight: bolder;
+}
+
+.icons-end{
+    width:100%;
+    height:50px;
+    border: 2px solid yellowgreen;
+}
+
+.email-input{
+    width:100%;
+    height:47px;
+    border-radius: 10px;
+    border-color: rgba(224, 210, 210, 0.87);
+    background: none;
+    border-style:solid;
+    padding:10px;
+    margin-top: 20px;
+}
+
+::placeholder{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.down-div{
+
 }
 
 
 .col-1-inner-cols{
     height:100%;
     width:100%;
-    border:2px solid rgba(0, 94, 255, 0);
     font-family: 'Roboto', sans-serif;
 }
 .footer-list{
