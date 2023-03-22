@@ -456,7 +456,7 @@ footer .row-2 p{
 .email-input{
     width:100%;
     height:47px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color: rgba(224, 210, 210, 0.87);
     background: none;
     border-style:solid;
@@ -470,6 +470,36 @@ footer .row-2 p{
 }
 
 .down-div{
+    margin-top:40px;
+  width:100%;
+  height:110px;
+  border:1px solid rgba(224, 210, 210, 0.87);
+    border-radius: 15px 15px  0px 0px;
+    display:flex;
+}
+
+.qr{
+    height:100%;
+    margin-right: 15px ;
+}
+
+.last-div{
+    font-size:20px;
+    font-weight: bolder;
+    color: white
+
+}
+
+.inner p{
+    font-size: 15px;
+}
+
+.down-div-2{
+    width:100%;
+    height:60px;
+    border:1px solid rgba(224, 210, 210, 0.87);
+    border-radius: 0px 0px  15px 15px;
+    text-align: center;
 
 }
 
